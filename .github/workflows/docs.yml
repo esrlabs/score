@@ -55,7 +55,8 @@ jobs:
         run: sudo apt update && sudo apt install -y graphviz
       - name: Build documentation
         run: |
-          bazel build //docs:github-pages && cp bazel-bin/docs/github-pages.tar .
+          bazel run //docs:incremental_release -- --github_user=${{ github.repository_owner }} --github_repo=${{ github.event.repository.name }}
+          tar -cf github-pages.tar _build
         # ------------------------------------------------------------------------------
         # Generate a unique artifact name to ensure proper tracking in all scenarios
         # ------------------------------------------------------------------------------
@@ -112,4 +113,4 @@ jobs:
         id: pages-deployment
         uses: ./.github/actions/deploy-versioned-pages
         with:
-          source_folder: extracted_docs
+          source_folder: extracted_docs/_build

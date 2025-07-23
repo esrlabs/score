@@ -25,34 +25,27 @@ docs(
     conf_dir = "docs",
     docs_targets = [
         {
-            "suffix": "",  # local without external needs
+            "suffix": "latest",  # latest main branch documentation build
+            "external_needs_info": [
+                {
+                    "base_url": "https://eclipse-score.github.io/process_description/main",
+                    "json_url": "https://eclipse-score.github.io/process_description/main/needs.json",
+                    "id_prefix": "process_",
+                },
+            ],
+        },
+        {
+            "suffix": "release",  # latest main branch documentation build
+            "target": ["@score_process//process:docs_needs_latest"],
+            "external_needs_info": [
+                {
+                    "base_url": "https://eclipse-score.github.io/process_description/main",
+                    "json_path": "/score_process~/process/docs_needs_latest/_build/needs/needs.json",
+                    "id_prefix": "process_",
+                },
+            ],
         },
     ],
     source_dir = "docs",
     source_files_to_scan_for_needs_links = [],
-)
-
-# Used inside //docs.bzl to enable access to the assets (css files etc.)
-filegroup(
-    name = "assets",
-    srcs = glob([
-        "_assets/**",
-    ]),
-    visibility = ["//visibility:public"],
-)
-
-filegroup(
-    name = "html",
-    srcs = [":docs"],
-)
-
-pkg_files(
-    name = "html_files",
-    srcs = [":html"],
-    renames = {"html": ""},
-)
-
-pkg_tar(
-    name = "github-pages",
-    srcs = [":html_files"],
 )

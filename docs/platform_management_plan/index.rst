@@ -16,7 +16,7 @@
    :id: doc__platform_mgt_plan
    :status: draft
    :safety: ASIL_B
-   :realizes: wp__platform_mgmt
+   :realizes: PROCESS_wp__platform_mgmt
    :tags: platform_management
 
 Platform Management Plan
@@ -30,13 +30,13 @@ Platform Management Plan
 
    project_management
    safety_management
+   security_management
    quality_management
    config_management
    tool_management
    release_management
    problem_resolution
    change_management
-   requirements_management
    software_verification
    documentation_management
    software_development

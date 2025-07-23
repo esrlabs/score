@@ -24,7 +24,53 @@ jobs:
     permissions:
       pages: write
       contents: write
+      pull-requests: write
+      issues: write # Allow label creation
     steps:
+      - name: Close abandoned feature-request PRs
+        uses: actions/stale@v9
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          only-pr-labels: feature_request
+          days-before-issue-stale: -1 # Override days-before-stale for issues only
+          days-before-issue-close: -1 # Override days-before-close for issues only
+          days-before-pr-stale: 90 # 30 days idle → stale
+          days-before-pr-close: 10 # close countdown
+          stale-pr-message: >
+            This feature request has been idle for 90 days. We'll auto-close it in 10 days unless there's new activity.
+          close-pr-label: autoclosed
+          operations-per-run: 90
+          close-pr-message: "Auto-closing: no activity for 90 days. If this is still relevant, reopen or create a fresh PR."
+
+      - name: Close abandoned PRs
+        uses: actions/stale@v9
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          exempt-pr-labels: feature_request
+
+          # days-before-stale Idle number of days before marking issues/PRs stale (default: 60)
+          # days-before-close Idle number of days before closing stale issues/PRs (default: 7)
+
+          # Don't handle issues
+          # If set to a negative number like -1, the issues or the pull requests will never be closed automatically.
+          days-before-issue-stale: -1 # Override days-before-stale for issues only
+          days-before-issue-close: -1 # Override days-before-close for issues only
+
+          # Handle PRs
+          # Mark as stale after 30 days of inactivity and then for stale PRs close after 10 days
+          days-before-pr-stale: 30 # Override days-before-stale for PRs only
+          days-before-pr-close: 10 # Override days-before-close for PRs only
+
+          # Add message to the PR when it is stale
+          stale-pr-message: >
+            This PR is stale because it has been open for 30 days with no activity. It will be closed in 10 days if no further activity occurs. #magic___^_^___line
+          # Label the PR as autoclosed
+          close-pr-label: autoclosed
+          operations-per-run: 90 # Increase the number of operations per run
+
+          # Add comment to the PR when it is closed
+          close-pr-message: "Auto-closing: no activity for 30 days. If this is still relevant, reopen or create a fresh PR."
+
       - name: Checkout gh-pages branch
         uses: actions/checkout@v4
         with:
