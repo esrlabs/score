@@ -15,7 +15,7 @@
 libc Component Architecture
 ***************************
 
-.. comp:: os::libc
+.. comp:: libc
    :id: comp__os_libc
    :security: YES
    :safety: ASIL_B

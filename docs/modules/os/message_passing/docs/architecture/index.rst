@@ -20,7 +20,7 @@ Message Passing Component Architecture
    :security: YES
    :safety: ASIL_B
    :status: valid
-   :implements: logic_arc_int__os__message_passing
+   :satisfies:
 
 
 .. comp_arc_sta:: QNX::Message Passing Static View
