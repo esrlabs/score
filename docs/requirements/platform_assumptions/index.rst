@@ -48,8 +48,13 @@ Note that the "supplier" AoUs were created with an OS supplier in mind but are r
 
    The system integrator shall use an operating system compliant with IEEE Std 1003.1 (2004 Edition or newer)
 
-Assumptions on the external SW element integration - Community Level
---------------------------------------------------------------------
+.. _integration_assumptions:
+
+Assumptions on the external SW element integration
+--------------------------------------------------
+
+Community Level
++++++++++++++++
 
 This is the lowest level of integration, the higher levels will build on this.
 It also contains expectations towards an supplier which can be used as criteria for supplier selection
@@ -88,8 +93,8 @@ is provided for e.g. build or test problems. No guarantees that S-CORE builds or
 There are no AoUs on the system integrator on this level,
 as this level is not expected sufficient for a product release, only for incubation/prototype.
 
-Assumptions on the external SW element integration - Functional Level
----------------------------------------------------------------------
+Functional Level
+++++++++++++++++
 
 This is the middle level of integraton, the higher level will build on this.
 It is the level where the S-CORE SW-platform will functionally "work" with the external SW element.
@@ -138,8 +143,8 @@ It is the level where the S-CORE SW-platform will functionally "work" with the e
 
    The system integrator shall report the bugs found during integration of the S-CORE SW-platform on their selected OS/Hypervisor/HW combination to the external SW element supplier and S-CORE for analysis.
 
-Assumptions on the external SW element integration - Certifiable Level
-----------------------------------------------------------------------
+Certifiable Level
++++++++++++++++++
 
 This is the highest level of integraton. This is the level where the S-CORE SW-platform will be certifiable with an external SW element.
 

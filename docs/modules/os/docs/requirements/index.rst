@@ -30,7 +30,7 @@ defined in the SW-platform assumptions (and partly even in the Stakeholder requi
 The system integrator integrating S-CORE with the OS to provide a safe product has to make sure
 
 - the functional requirements below are matching the OS used - see also :need:`aou_req__platform__safety_matching`
-- the non-functional (integration) requirements below are fulfilled by the OS supplier
+- the non-functional (integration) requirements below are fulfilled by the OS supplier - see also :ref:`integration_assumptions`
 
 Integration Requirements
 ========================

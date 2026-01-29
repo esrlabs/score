@@ -19,7 +19,7 @@ Assumptions of Use
    :id: doc__os_aou
    :status: draft
    :safety: ASIL_B
-   :security: NO
+   :security: YES
    :realizes: wp__requirements_comp
 
 .. aou_req:: No Root Privileges

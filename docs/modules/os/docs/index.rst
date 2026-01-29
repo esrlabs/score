@@ -32,7 +32,7 @@
    But also other SW components are modelled as a part of it as these are often provided by the "OS" supplier.
    One example of these "other" SW components are the C/C++ libs which may come from a processor manufacturer instead.
    S-CORE expects to support integration of more than one operating system, so these may be seen already in this module view,
-   as different components.
+   as different components. Preconditions to this OS integration are documented in :need:`doc__os_requirements`.
 
    .. needarch::
       :scale: 50
