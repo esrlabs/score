@@ -21,7 +21,7 @@
 
 .. mod_view_sta:: OS
    :id: mod_view_sta__os__os
-   :includes: comp__os_libc, comp__os_message_passing
+   :includes: comp__os_libc, comp__os_message_passing, comp__os_libcpp
    :belongs_to: mod__os
 
    The module "OS" is not a part of the S-CORE SW-Platform, but it is a crucial external SW element.
@@ -32,7 +32,7 @@
    But also other SW components are modelled as a part of it as these are often provided by the "OS" supplier.
    One example of these "other" SW components are the C/C++ libs which may come from a processor manufacturer instead.
    S-CORE expects to support integration of more than one operating system, so these may be seen already in this module view,
-   as different components. Preconditions to this OS integration are documented in :need:`doc__os_requirements`.
+   as different components. Requirements on this OS integration are documented in :need:`doc__os_requirements`.
 
    .. needarch::
       :scale: 50
