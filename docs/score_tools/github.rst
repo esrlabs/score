@@ -57,9 +57,9 @@ Available information
 
 
 Usage constraints:
-- Requires internet access and GitHub account
-- API rate limits and permission model apply
-- Actions runners may have resource/time limits
+ | - Requires internet access and GitHub account
+ | - Actions runners may have resource/time limits
+ | - Some features may require paid plans (e.g., private repositories, larger runner capacity)
 
 Installation and integration
 ----------------------------
@@ -229,8 +229,3 @@ Result
 ------
 GitHub does not require qualification for use in safety-related software development according to ISO 26262.
 Suggested safety and security measures should be applied to mitigate identified risks.
-
-
-
-.. [1] The tool version mentioned in this document is preliminary.
-       It is subject to change and will be updated in future.
