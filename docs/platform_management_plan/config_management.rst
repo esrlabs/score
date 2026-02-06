@@ -70,7 +70,12 @@ The complete list of project documents is defined in the :need:`doc__documentati
 Ids are checked for uniqueness, see :need:`gd_req__configuration_uid`.
 sphinx-needs is also used to document the work products properties/attributes defined in the process area descriptions.
 The work products are stored in text or code files (these are identified by their filenames) within GitHub repositories.
-There is one `platform repository <https://GitHub.com/eclipse-score/score/>`_ and one repository for each module.
+GitHub repositories are the realization of the Delivery Containers as described in :need:`doc_concept__general_building_blocks`.
+There is one `platform repository <https://GitHub.com/eclipse-score/score/>`_ and one repository for each set of Dependable elements
+one Delivery Team is responsibel for [TBD add link to role defintion].
+
+In S-CORE every repository shall have only one MODULE.bazel file which defines its version and dependencies.
+Exceptions from this may be needed for testing reasons only.
 
 For other artefacts these are either
 
@@ -125,13 +130,14 @@ Baselines are created by using the GitHub "tag" function. The tag name shall cor
 the release branch name the tag is created, adding patch version and pre-release tag.
 See also :need:`doc__platform_release_management_plan`.
 
-As described in "Identification and Properties" above, there are several repositories for the modules and the platform integration.
+As described in "Identification and Properties" above, there are several repositories.
 Baselines are created individually in these repositories, even a different version schema could be adopted.
 In case of dependent repositories, the repository dependent upon on has to be base-lined first, to be available
 to refer to this baseline when integrating it. That means that for example a platform baseline also
-documents the versions (baselines) of the modules the platform consists of. This can then also be seen in the platform release note.
+documents the versions (baselines) of the delivery containers/repositories the platform consists of.
+This can then also be seen in the platform release note.
 
-Every change in the release repository is also taken over into the main branch. The module development team
+Every change in the release branch is also taken over into the main branch. The Delivery Team
 can decide how to ensure this (e.g. by development in main and cherry-pick to release branch).
 
 
