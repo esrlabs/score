@@ -11,9 +11,13 @@
 .. SPDX-License-Identifier: Apache-2.0
 .. *******************************************************************************
 
-========================================================
-Eclipse SCORE - Complete Tool List for Safety Evaluation
-========================================================
+
+.. attention::
+  This list is only for evaluation reasons and will be deleted after the evaluation is completed.
+
+===================
+ONLY FOR EVALUATION
+===================
 
 :Date: January 26, 2026
 :Organization: Eclipse Foundation
