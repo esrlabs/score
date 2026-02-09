@@ -12,14 +12,14 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. _tools_testing_frameworks:
+.. _tools_vc_cicd:
 
-Testing Frameworks Tools Overview
-=================================
+Version Control & CI/CD Tools Overview
+======================================
 
-.. needtable:: Testing Frameworks List
-   :tags: tool_management, tools_testing_frameworks
-   :filter: "tool_management" in tags and "tools_testing_frameworks" in tags and type == "doc_tool" and is_external == False
+.. needtable:: Compiler Tools List
+   :tags: tool_management, tools_vc_cicd
+   :filter: "tool_management" in tags and "tools_vc_cicd" in tags and type == "doc_tool" and is_external == False
    :style: table
    :sort: status
    :columns: id as "UID";title as "TITLE";version as "VERSION";status as "STATUS";tcl as "TCL";safety_affected as "SAFETY AFFECTED";security_affected as "SECURITY AFFECTED"
@@ -28,6 +28,3 @@ Testing Frameworks Tools Overview
 .. toctree::
    :hidden:
    :maxdepth: 2
-
-   gtest
-   itf

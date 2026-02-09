@@ -35,3 +35,6 @@ S-CORE Tools Overview
    tools_static_analysis_code_quality/index
    tools_testing_frameworks/index
    tools_build_development/index
+   tools_compiler/index
+   tools_vc_cicd/index
+   tools_license_security/index
