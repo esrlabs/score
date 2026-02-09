@@ -29,7 +29,6 @@ S-CORE Tools Overview
    :hidden:
    :maxdepth: 2
 
-   eclipse_score_tools_safety_evaluation_list
    score_tools_evaluation_list
    tools_documentation/index
    tools_static_analysis_code_quality/index
