@@ -58,6 +58,7 @@ Developing such platforms independently at each automotive company is inefficien
 It also consumes significant effort and budget without generating direct customer value.
 
 An open-source approach offers an alternative:
+
 -	to improved quality through shared development,
 -	reduced effort across the industry, and
 -	faster delivery of new vehicle functions.
