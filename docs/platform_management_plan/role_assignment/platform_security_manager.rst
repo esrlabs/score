@@ -29,7 +29,7 @@ For the platform security management a pool of security managers is elected due 
 
 `Markus Schu <https://github.com/masc2023>`_
 
-
+`Volker Häussler <https://github.com/PandaDo>`_
 
 Election Reasoning
 ==================
@@ -59,13 +59,29 @@ S-CORE Commits:
 - major committer in `process_description repository <https://github.com/eclipse-score/process_description>`_
 - major committer in `score repository <https://github.com/eclipse-score/score>`_
 
+Evidences Volker Häussler
+-------------------------
+
+`LinkedIn Profile <https://www.linkedin.com/in/volker-h%C3%A4ussler-58a840111/details/experience/>`_
+
+Security Management Experience:
+
+- Teamlead / Security Manager at Engineering Service Provider from 2015 to 2018
+- Department Head Functional Safety & Cyber Security at Engineering Service Provider from 2018 to 2025
+- Compliance Manager / Security Manager at Tier1 from 2025 to now
+
+Education and Skills:
+
+- Dipl.-Ing. (FH) Electrical Engineering - certificate
+- Security related development
+- Security trainings by Udemy Academy and Qorix
 
 Election
 ========
 
-For the election further Committers with similar skills are asked for approval:
+For the election the following Committers already elected as security managers are asked:
 
-- `Volker Häussler <https://github.com/PandaeDo>`_
+- `Markus Schu <https://github.com/masc2023>`_
 
 The election is performed by approving the pull request of this document.
 The nominee is elected if the above committers in the list approve and nobody "request changes".
