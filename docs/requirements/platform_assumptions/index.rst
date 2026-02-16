@@ -344,7 +344,7 @@ In this section assumptions are described which need to be fulfilled by the syst
    :safety: ASIL_B
    :status: valid
 
-   If the system using the SW-platform has safety goals, the used os module shall offer the following functions in a safe way:
+   If the system using the SW-platform has safety goals, the used os module shall offer the following safety related functions:
 
    - configuration of HW safety mechanisms as in :need:`stkh_req__dependability__safety_features`
    - startup of OS
@@ -355,7 +355,7 @@ In this section assumptions are described which need to be fulfilled by the syst
    - filesystem access (data integrity of read-only-memory)
    - DMA
    - IPC communication primitives (shared memory and message passing)
-   - C++ standard library (according to Iso 14882)
+   - C++ standard library (according to ISO 14882)
    - C library
    - math library
-   - time source
+   - high precision time source (HW synchronized)

@@ -62,3 +62,4 @@ OS Specific Functional Requirements
 
 - :need:`aou_req__platform__process_isolation`
 - :need:`aou_req__platform__os_safety_functions`
+- :need:`aou_req__platform__posix_operating_system`
