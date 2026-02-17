@@ -12,65 +12,60 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. doc_tool:: ITF
-   :id: doc_tool__itf
+.. doc_tool:: gtest
+   :id: doc_tool__gtest
    :status: draft
-   :version: 0.1.0
+   :version: 1.15.0
    :tcl: LOW
    :safety_affected: YES
    :security_affected: YES
    :realizes: wp__tool_verification_report
-   :tags: tool_management
+   :tags: tool_management, tools_testing_frameworks
 
-ITF (Integration Testing Framework) Verification Report
-=======================================================
+GoogleTest (GTest) Verification Report
+======================================
 
 Introduction
 ------------
 Scope and purpose
 ~~~~~~~~~~~~~~~~~
-ITF is a pytest-based integration testing framework that simplifies writing and
-running integration tests. It provides utilities for common integration tasks
-— for example, SSH connection setup, interpreting dataframes, parsing
-diagnostic messages, etc. ITF can execute tests on emulators (QEMU) as well as on
-physical hardware.
+GoogleTest (GTest) is a C++ testing framework developed by Google to support the creation
+of robust, maintainable, and portable tests. It is designed to help developers write tests
+by offering a rich set of assertions, test fixtures, and test discovery
+mechanisms. GTest is compatible with various platforms.
 
 Inputs and outputs
 ~~~~~~~~~~~~~~~~~~
-| Inputs: Software image (binary), Pytest-based test files (python)
-| Outputs: Test report
+| Inputs: Software sources (C++), GTest-based test files (C++)
+| Outputs: Test binary, Test report (txt, json, xml).
 
-.. figure:: _assets/itf.drawio.svg
+.. figure:: _assets/gtest.drawio.svg
   :width: 100%
   :align: center
-  :alt: ITF overview
+  :alt: GTest overview
 
-  ITF overview
+  GTest overview
 
 Available information
 ~~~~~~~~~~~~~~~~~~~~~
-- Version: 0.1.0 [1]_
-- Repository: https://github.com/eclipse-score/itf
-- Example of ITF test in S-CORE ITF repository: https://github.com/eclipse-score/itf/blob/main/examples/examples/itf/test_docker.py
+- Version: 1.15.0 [1]_
+- Official repository: https://github.com/google/googletest
+- Official documentation: https://google.github.io/googletest
+- API Reference: https://google.github.io/googletest/reference/testing.html
+- Example of GTest configuration in S-CORE module repository: https://github.com/eclipse-score/baselibs/blob/main/MODULE.bazel
 
 
 Installation and integration
 ----------------------------
 Installation
 ~~~~~~~~~~~~
-| To add the ITF Bazel dependency to your project or module, include the following line in your MODULE.bazel file:
+| To add the GTest Bazel dependency to your project or module, include the following line in your MODULE.bazel file:
 
 .. code-block:: Python
 
-  bazel_dep(name = "score_itf", version = "0.1.0")
+  bazel_dep(name = "googletest", version = "1.15.0")
 
-| And verify that the `.bazelrc` configuration file contains the following directive to register the S-CORE module registry:
-
-.. code-block:: Python
-
-  common --registry=https://raw.githubusercontent.com/eclipse-score/bazel_registry/main/
-
-| The sources of bazel S-CORE ITF module configuration can be found at: https://github.com/eclipse-score/bazel_registry/tree/main/modules/score_itf
+| Bazel will fetch from the Bazel Central Registry (BCR): https://registry.bazel.build/modules/googletest
 
 
 Integration
@@ -79,11 +74,11 @@ Integrated in bazel.
 
 Environment
 ~~~~~~~~~~~
-Running application software instance with configured connection.
+Requires C++ compiler and bazel build environment.
 
 Safety evaluation
 -----------------
-This section outlines the safety evaluation of ITF for its use within the S-CORE project.
+This section outlines the safety evaluation of GTest for its use within the S-CORE project.
 
 
 .. list-table:: Safety evaluation
@@ -102,9 +97,9 @@ This section outlines the safety evaluation of ITF for its use within the S-CORE
      - Run tests and generate test report
      - | Fails to load input files
        |
-       | ITF fails to load provided file even if file is present and accessible.
+       | GTest fails to load provided file even if file is present and accessible.
      - yes
-     - (implicit) Check ITF test run status
+     - (implicit) Check test run status
      - yes
      - no
      - high
@@ -112,9 +107,9 @@ This section outlines the safety evaluation of ITF for its use within the S-CORE
      - Run tests and generate test report
      - | Fails to write result to file
        |
-       | ITF was not able to save results in file(s).
+       | GTest was not able to save results in file(s).
      - yes
-     - (implicit) Check ITF test run status
+     - (implicit) Check test run status
      - yes
      - no
      - high
@@ -122,7 +117,7 @@ This section outlines the safety evaluation of ITF for its use within the S-CORE
      - Run tests and generate test report
      - | Fails to collect results of the test(s)
        |
-       | ITF was not able to collect results of executed test.
+       | GTest was not able to collect results of executed test.
      - no
      - no
      - yes
@@ -132,7 +127,7 @@ This section outlines the safety evaluation of ITF for its use within the S-CORE
      - Run tests and generate test report
      - | Fails to detect an existing error
        |
-       | ITF fails to detect the presence of existing errors.
+       | GTest fails to detect the presence of existing errors.
      - yes
      - no
      - no
@@ -142,7 +137,7 @@ This section outlines the safety evaluation of ITF for its use within the S-CORE
      - Run tests and generate test report
      - | Fails to execute the test
        |
-       | ITF fails to execute specific test from the test plan
+       | GTest fails to execute specific test from the test plan
      - no
      - no
      - yes
@@ -150,9 +145,9 @@ This section outlines the safety evaluation of ITF for its use within the S-CORE
      - high
    * - 6
      - Run tests and generate test report
-     - | Indicates presence of a non-existing error
-       |
-       | ITF indicates the presence of errors that do not exist.
+     - Indicates presence of a non-existing error
+
+       GTest indicates the presence of errors that do not exist.
      - no
      - no
      - yes
@@ -162,7 +157,7 @@ This section outlines the safety evaluation of ITF for its use within the S-CORE
      - Run tests and generate test report
      - | Produces wrong test report
        |
-       | ITF fails to save correct test result in test report.
+       | GTest fails to save correct test result in test report.
      - yes
      - Review test report
      - yes
@@ -171,7 +166,7 @@ This section outlines the safety evaluation of ITF for its use within the S-CORE
 
 Security evaluation
 -------------------
-This section outlines the security evaluation of ITF for its use within the S-CORE project.
+This section outlines the security evaluation of GTest for its use within the S-CORE project.
 
 
 .. list-table:: Security evaluation
@@ -192,7 +187,7 @@ This section outlines the security evaluation of ITF for its use within the S-CO
 
 Result
 ~~~~~~
-ITF requires qualification for use in safety-related software development.
+GTest requires qualification for use in safety-related software development according to ISO 26262.
 
 
 **Tool Qualification**
@@ -201,11 +196,12 @@ Based on method: validation of the software tool.
 
 Requirements and testing aspects
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Tool requirements are derived from official documentation (currently missing): https://github.com/eclipse-score/itf
+Tool requirements are derived from official documentation: https://google.github.io/googletest
 
-The testing team is responsible for identifying the specific ITF functionality
+GTest is an open-source tool and does not provide formal, vendor-defined requirements.
+Therefore, the testing team is responsible for identifying the specific GTest functionality
 used in the project. Based on this, requirements for the utilized features must be derived from
-the available documentation and ITF validated against defined requirements.
+the available documentation and GTest validated against defined requirements.
 
 
 .. [1] The tool version mentioned in this document is preliminary.
