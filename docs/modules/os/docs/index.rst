@@ -18,8 +18,9 @@
    :safety: ASIL_B
    :security: YES
    :includes: comp__os_libc, comp__os_message_passing
+   :tags: external
 
-.. mod_view_sta:: OS
+.. mod_view_sta:: OS (external)
    :id: mod_view_sta__os__os
    :includes: comp__os_libc, comp__os_message_passing, comp__os_libcpp
    :belongs_to: mod__os
