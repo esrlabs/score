@@ -153,30 +153,13 @@ Logging
 
 **Improvements**
 
-The Eclipse SCORE Logging module provides a comprehensive logging framework for automotive embedded systems,
+The Eclipse S-CORE Logging module provides a logging framework for automotive embedded systems,
 featuring remote DLT (Diagnostic Log and Trace) capabilities with
 lock-free communication between applications and the datarouter daemon.
 
-This is the initial open-source release of the logging framework,
-consolidating the complete project structure with build system, dependencies,
-and tooling for integration into Eclipse SCORE projects.
-
-The module is designed for Bazel-based builds and provides both the middleware logging
-library (score/mw/log) that includes all supported recorders with respective backends and
-the datarouter daemon (score/datarouter). The shared memory implementation between the middleware
-library and datarouter daemon guarantees Freedom From Interference (FFI),
-enabling safe logging from real-time and safety-critical contexts.
-
-- **Version:** ``logging v0.``
-- **VSource / tag:**  `logging release <>`__
-- **Further reading:**: See below
-
-  - `Logging release notes <>`__
-  - `Logging ReadMe <https://github.com/eclipse-score/logging/tree/main/score/datarouter>`__
-
-**Improvements**
- - `score_log_bridge` - connecting Rust `score_log` frontend to C++ logging backend
-
+- **Version:** ``logging v0.1.0``
+- **Source / tag:** `Logging GitHub release <https://github.com/eclipse-score/logging/archive/refs/tags/v0.1.0.tar.gz>`_
+- **Release notes**: `Logging release notes <https://github.com/eclipse-score/logging/releases/tag/v0.1.0>`_
 
 Orchestrator
 ~~~~~~~~~~~~~
