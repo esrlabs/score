@@ -12,13 +12,13 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-S-Core v0.6-release notes
+S-CORE v0.6-release notes
 ===============================
 
-.. document:: S-Core v0.6 release note
+.. document:: S-CORE v0.6 release note
    :id: doc__score_v06_release_note
    :status: draft
-   :safety: ASIL_B
+   :safety: QM
    :security: YES
    :realizes: wp__platform_sw_release_note
 
@@ -38,7 +38,7 @@ This release of Eclipse S-CORE is an early beta version intended solely for expe
 Please be aware, that features may be incomplete, the software may exhibit instability or unexpected behavior, and breaking changes and alterations in scope are likely as development progresses.
 
 
-.. image:: ../_assets/architecture.drawio.svg
+.. image:: ../_assets/architecture.drawio_0_6.svg
    :width: 1000
    :alt: Architecture overview
    :align: center
@@ -53,9 +53,6 @@ Eclipse S-CORE book
 -------------------
 The `Eclipse S-CORE book <https://eclipse-score.github.io/score/main/handbook/index.html>`_
 is a “how-to” guide for users getting started with the project or who want to contribute new modules.
-It introduces the core concepts of Eclipse S-CORE and walks through building
-the ``scrample`` application step by step on top of the platform modules.
-It also includes a tutorial for the first application on top of the existing modules.
 
 
 Improvements
@@ -65,9 +62,8 @@ Improvements
 S-CORE Platform
 ^^^^^^^^^^^^^^^^^^
 
-- **Version:** ``score v0.``
-- **Source / tag:** `S-CORE Platform GitHub release <>`_
-- **Release notes**: `S-CORE Platform release notes <>`_
+- **Version:** ``score v0.5.5``
+- **Release notes**: `S-CORE Platform release notes <https://github.com/eclipse-score/score/releases/tag/v0.5.5>`_
 
 
 
@@ -79,7 +75,6 @@ Baselibs
 Selection of basic C++ utility libraries for common use in the S-CORE project
 
 - **Version:** ``baselibs v0.2.4``
-- **Source / tag:** `Baselibs GitHub release <https://github.com/eclipse-score/baselibs/archive/refs/tags/v0.2.4.tar.gz>`_
 - **Release notes**: `Baselibs release notes <https://github.com/eclipse-score/baselibs/releases/tag/v0.2.4>`_
 
 Baselibs Rust
@@ -88,7 +83,6 @@ Baselibs Rust
 Selection of basic Rust utility libraries for common use in the S-CORE project
 
 - **Version:** ``baselibs_rust v0.1.0``
-- **Source / tag:** `Baselibs Rust GitHub release <https://github.com/eclipse-score/baselibs_rust/releases/tag/v0.1.0>`_
 - **Release notes**: `Baselibs Rust release notes <https://github.com/eclipse-score/baselibs_rust/releases/tag/v0.1.0>`_
 
 
@@ -102,9 +96,8 @@ Communication
 ~~~~~~~~~~~~~
 Zero-copy, shared-memory based inter-process communication for minimal-latency intra-ECU messaging.
 
-- **Version:** ``communication v0.``
-- **Source / tag:** `Communication GitHub release <>`_
-- **Release notes:** :need:`doc__communication_release_note`
+- **Version:** ``communication v0.1.3``
+- **Release notes**: `Communication release notes <https://github.com/eclipse-score/baselibs_rust/releases/tag/v0.1.3>`_
 
 **Improvements**
 
@@ -116,9 +109,8 @@ Fixed Execution Order Framework(FEO)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 A framework for data-driven and time-driven applications (mainly in the ADAS domain)
 
-- **Version:** ``feo v1.0.4``
-- **Source / tag:** `FEO GitHub release <https://github.com/eclipse-score/feo/releases/tag/v1.0.4>`_
-- **Release notes**: `FEO  release notes 1.0.x <https://github.com/eclipse-score/feo/releases>`_
+- **Version:** ``feo v1.0.5``
+- **Release notes**: `FEO  release notes 1.0.x <https://github.com/eclipse-score/feo/releases/tag/v1.0.5>`_
 
 **Improvements**
 
@@ -135,7 +127,7 @@ Ensures long-term storage and retrieval of data and provides a reliable mechanis
 preserving application state and data integrity over time.
 
 - **Version:** ``persistency v0.3.0``
-- **Source / tag:** `Persistency GitHub release <https://github.com/eclipse-score/persistency/archive/refs/tags/v0.3.0.tar.gz>`_
+- **Release notes**: `Persistency release notes <https://github.com/eclipse-score/persistency/releases/tag/v0.3.0>`_
 
 **Improvements**
 
@@ -149,7 +141,7 @@ preserving application state and data integrity over time.
 - Updated utilized toolchains, updated S-CORE dependencies.
 
 Logging
-~~~~~~~~~~~~~~~~~~
+~~~~~~~
 
 **Improvements**
 
@@ -158,7 +150,6 @@ featuring remote DLT (Diagnostic Log and Trace) capabilities with
 lock-free communication between applications and the datarouter daemon.
 
 - **Version:** ``logging v0.1.0``
-- **Source / tag:** `Logging GitHub release <https://github.com/eclipse-score/logging/archive/refs/tags/v0.1.0.tar.gz>`_
 - **Release notes**: `Logging release notes <https://github.com/eclipse-score/logging/releases/tag/v0.1.0>`_
 
 Orchestrator
@@ -166,7 +157,6 @@ Orchestrator
 Orchestrator module provides a framework for defining and executing complex workflows and task sequences in a coordinated manner.
 
 - **Version:** ``orchestrator v0.1.0``
-- **Source / tag:** `Orchestrator GitHub release <https://github.com/eclipse-score/orchestrator/releases/tag/v0.1.0>`_
 - **Release notes**: `Orchestrator release notes <https://github.com/eclipse-score/orchestrator/releases/tag/v0.1.0>`_
 
 **Improvements**
@@ -187,7 +177,6 @@ Kyron is a customizable, high-performance async/await runtime designed for advan
 It allows fine-grained control over scheduling, thread management, and workload isolation through configurable execution engines.
 
 - **Version:** ``kyron v0.1.1``
-- **Source / tag:** `Kyron GitHub release <https://github.com/eclipse-score/kyron/releases/tag/v0.1.1>`_
 - **Release notes**: `Kyron release notes <https://github.com/eclipse-score/kyron/releases/tag/v0.1.1>`_
 
 **Improvements**
@@ -217,7 +206,6 @@ Lifecycle & Health Management
 Lifecycle module provides a Launch Manager for process lifecycle management as well as a Health Monitoring library to support supervision of process behavior.
 
 - **Version:** ``lifecycle v0.1.0``
-- **Source / tag:** `Lifecycle GitHub release <https://github.com/eclipse-score/lifecycle/releases/tag/v0.1.0>`_
 - **Release notes**: `Lifecycle release notes <https://github.com/eclipse-score/lifecycle/releases/tag/v0.1.0>`_
 
 **Improvements**
@@ -253,10 +241,6 @@ Reference Red Hat AutoSD Linux image (Experimental)
 - Uses AutoSD's toolchain to build and generate Lola RPMs
 - Deploy RPMs into an AutoSD Image
 
-Pull requests:
-
-tbd
-
 
 Reference Elektrobit corbos Linux for Safety Applications Linux image (Experimental)
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -282,8 +266,7 @@ in the automotive domain, suitable for safety and security contexts.
   - ISO PAS 8926
 
 - **Version:** ``process description v1.4.3``
-- **Source / tag:** `process_description release <https://github.com/eclipse-score/process_description/releases/tag/v1.4.3>`_
-- **Release notes**: `process_description release notes v1.4.x <https://github.com/eclipse-score/process_description/releases>`_
+- **Release notes**: `process_description release notes v1.4.x <https://github.com/eclipse-score/process_description/releases/tag/v1.4.3>`_
 - **Process maturity overview**:
 
 .. figure:: ../_assets/score_process_area_overview.drawio.svg
@@ -300,14 +283,14 @@ docs-as-code
 ~~~~~~~~~~~~~~
 Tooling for linking and generation of documentation.
 
-- **Version:** ``docs-as-code v``
-- **Source / tag:** `docs-as-code GitHub release <>`_
+- **Version:** ``docs-as-code v3.0.1``
+- **Source / tag:** `docs-as-code GitHub release <https://github.com/eclipse-score/docs-as-code/releases/tag/v3.0.1>`_
 
 tooling
 ~~~~~~~~~~~~~~
 Tooling for S-CORE development.
 
-- **Version:** ``tooling v``
+- **Version:** ``tooling v1.1.2``
 - **Source / tag:** `tooling GitHub release <>`_
 
 
@@ -317,8 +300,8 @@ ITF (Integration Testing Framework)
 
   - Improved ITF `user documentation <https://github.com/eclipse-score/itf/blob/main/README.md>`_
 
-- **Version:** ``itf v0``
-- **Source / tag:** `ITF GitHub release <>`_
+- **Version:** ``itf v0.1.1``
+- **Source / tag:** `ITF GitHub release <https://github.com/eclipse-score/itf/releases/tag/v0.1.1>`_
 
 Test Scenarios
 ~~~~~~~~~~~~~~~
@@ -338,13 +321,10 @@ Bazel CPP Toolchain
 
   - tbd
 
-- **Version:** ``bazel_cpp_toolchains v``
-- **Source / tag:** `Bazel CPP Toolchain release <>`_
-- **Release notes**: `Bazel CPP Toolchain release notes <>`_
+- **Version:** ``bazel_cpp_toolchains v0.3.0``
+- **Release notes**: `Bazel CPP Toolchain release notes <https://github.com/eclipse-score/bazel_cpp_toolchains/releases/tag/v0.3.0>`_
 
-Performed Verification
-----------------------
-tbd
+
 
 Known Issues
 ----------------------
@@ -352,9 +332,10 @@ Known Issues
 
 Upgrade Instructions
 ----------------------
-- Increase to newest bazel registry versions: https://github.com/eclipse-score/bazel_registry/tree/main/modules
-
+- Increase to newest bazel registry versions: https://eclipse-score.github.io/bazel_registry_ui
+- Versions can be found under: https://github.com/eclipse-score/reference_integration/blob/main/known_good.json
 
 Contact Information
 ----------------------
-For any questions or support, please contact the *Project lead* or raise an issue/discussion.
+For any questions or support, please contact the *Project leads* or raise an issue/discussion.
+https://projects.eclipse.org/projects/automotive.score
