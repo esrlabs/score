@@ -51,13 +51,14 @@ This ensures a stable public API, independent of the underlying binding(s). At t
    :status: valid
    :fulfils: feat_req__com__interfaces
    :includes: logic_arc_int__communication__user
+   :belongs_to: feat__com_communication
 
    .. needarch::
       :scale: 50
       :align: center
 
       {{ draw_feature(need(), needs) }}
-      mod_view_sta__tracing__tracing -[hidden]-> mod_view_sta__baselibs__baselibs
+      mod__tracing -[hidden]-> mod__baselibs
 
 In the following sections we will look on the different architectural elements of the communication framework in more
 detail.

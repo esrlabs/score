@@ -60,11 +60,9 @@ Software artifacts
 
    .. grid-item-card::
 
-      Features
+      Features & Modules
       ^^^
-      :ref:`Features <features>` are the heart of the S-CORE software.
-      Understand the internal details of :ref:`Infrastructure <infrastructure_feature>`
-      or :ref:`Integration <integration_features>` Features.
+      :ref:`Features <features>` and :ref:`Modules <modules>` are the heart of the S-CORE software.
 
    .. grid-item-card::
 
@@ -94,7 +92,8 @@ Project structure and processes
       ^^^
       Read about our project and organization structure in the
       :ref:`Project Handbook <pmp>`.
-      And learn how we deal with :need:`doc__score_platform_safety_plan` or care about :need:`doc__verification_plan`.
+      And learn how we deal with :ref:`Platform Safety Plan <score_platform_safety_plan>` or care about :ref:`Software Verification Plan <software_verification_plan>`.
+
 
 .. dropdown:: Click to see the complete sitemap
 

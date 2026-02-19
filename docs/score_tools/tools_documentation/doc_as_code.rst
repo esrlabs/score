@@ -20,7 +20,7 @@
    :safety_affected: YES
    :security_affected: YES
    :realizes: wp__tool_verification_report
-   :tags: tool_management
+   :tags: tool_management, tools_documentation
 
 
 Doc-as-Code Verification Report
