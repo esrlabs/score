@@ -113,10 +113,20 @@ Zero-copy, shared-memory based inter-process communication for minimal-latency i
 - Support explicit setting of application id in configuration (with fallback to PID)
 
 Fixed Execution Order Framework(FEO)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- **Version:** ``feo v0.``
-- **Source / tag:** `Communication GitHub release <>`_
-- **Stays at v0.5-alpha**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+A framework for data-driven and time-driven applications (mainly in the ADAS domain)
+
+- **Version:** ``feo v1.0.4``
+- **Source / tag:** `FEO GitHub release <https://github.com/eclipse-score/feo/releases/tag/v1.0.4>`_
+- **Release notes**: `FEO  release notes 1.0.x <https://github.com/eclipse-score/feo/releases>`_
+
+**Improvements**
+
+- Update GCC & Rust toolchains
+- Update Error propagation and handling
+- Update handling startup timeout
+- Update handling of spurious interrupts, shutdown and termination signals
+- Updates to CI and testing
 
 
 Persistency
@@ -268,7 +278,6 @@ process_description
 Provides a process model establishing organizational rules for developing open source software
 in the automotive domain, suitable for safety and security contexts.
 
-- **Version:** ``process description v``
 - **Standards alignment:**
 
   - ASPICE 4.0
@@ -276,7 +285,9 @@ in the automotive domain, suitable for safety and security contexts.
   - ISO 21434
   - ISO PAS 8926
 
-- **Release notes**: `process_description release notes <>`_
+- **Version:** ``process description v1.4.3``
+- **Source / tag:** `process_description release <https://github.com/eclipse-score/process_description/releases/tag/v1.4.3>`_
+- **Release notes**: `process_description release notes v1.4.x <https://github.com/eclipse-score/process_description/releases>`_
 - **Process maturity overview**:
 
 .. figure:: ../_assets/score_process_area_overview.drawio.svg
