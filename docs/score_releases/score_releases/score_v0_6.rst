@@ -222,7 +222,7 @@ Reference integration
 Central integration of Eclipse S-CORE modules
 
 - **Version:** ``reference integration v0.6.0``
-- **Source / tag:** `Reference Integration GitHub release <>`_
+- **Source / tag:** `Reference Integration GitHub release <https://github.com/eclipse-score/reference_integration/releases/tag/v0.6.0>`_
 
 **Improvements**
 - Unify handling of images in repository
@@ -291,7 +291,7 @@ tooling
 Tooling for S-CORE development.
 
 - **Version:** ``tooling v1.1.2``
-- **Source / tag:** `tooling GitHub release <>`_
+- **Source / tag:** `tooling GitHub release <https://github.com/eclipse-score/tooling/releases/tag/v1.1.2>`_
 
 
 ITF (Integration Testing Framework)
@@ -313,7 +313,7 @@ Test scenarios provide a backend for defining C++ and Rust implemented test scen
 - **Version:** ``Test Scenarios v0.4.0``
 - **Source / tag:** `Test Scenarios GitHub release <https://github.com/eclipse-score/testing_tools/releases/tag/v0.4.0>`_
 
-.. _bazel_cpp_toolchain:
+
 
 Bazel CPP Toolchain
 ~~~~~~~~~~~~~~~~~~~~
