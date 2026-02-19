@@ -78,9 +78,9 @@ Baselibs
 ~~~~~~~~~~~~~
 Selection of basic C++ utility libraries for common use in the S-CORE project
 
-- **Version:** ``baselibs v0.``
-- **Source / tag:** `Baselibs GitHub release <>`_
-- **Release notes**: `Baselibs release notes <>`_
+- **Version:** ``baselibs v0.2.4``
+- **Source / tag:** `Baselibs GitHub release <https://github.com/eclipse-score/baselibs/archive/refs/tags/v0.2.4.tar.gz>`_
+- **Release notes**: `Baselibs release notes <https://github.com/eclipse-score/baselibs/releases/tag/v0.2.4>`_
 
 Baselibs Rust
 ~~~~~~~~~~~~~
