@@ -130,13 +130,23 @@ A framework for data-driven and time-driven applications (mainly in the ADAS dom
 
 
 Persistency
-~~~~~~~~~~~~~
+~~~~~~~~~~~
 Ensures long-term storage and retrieval of data and provides a reliable mechanism for
 preserving application state and data integrity over time.
 
-- **Version:** ``persistency v0``
-- **Source / tag:** `Persistency GitHub release <>`_
+- **Version:** ``persistency v0.3.0``
+- **Source / tag:** `Persistency GitHub release <https://github.com/eclipse-score/persistency/archive/refs/tags/v0.3.0.tar.gz>`_
 
+**Improvements**
+
+- New backend API for Rust
+- Testing improvements, including:
+  - Additional C++ CIT tests, code quality improvements, tests logging.
+- Tooling improvements, including:
+  - Improved formatting, Rust linting.
+- Aligned snapshot count behavior between C++ and Rust implementations.
+- Adapted Ferrocene toolchain for Rust.
+- Updated utilized toolchains, updated S-CORE dependencies.
 
 Logging
 ~~~~~~~~~~~~~~~~~~
