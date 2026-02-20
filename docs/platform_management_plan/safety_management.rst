@@ -111,11 +111,11 @@ The following  ISO 26262 defined safety work products are not relevant for the S
 
 * Because distributed development is not how the project is organized. All contributors are seen as part of the project team.
   When used, OSS components are qualified and external SEooCs are integrated in the project scope: :need:`std_wp__iso26262__support_551`,
-  :need:`std_wp__iso26262__support_552`, :need:`std_wp__iso26262__support_553`, :need:`std_wp__iso26262__support_554`, :need:`std_wp__iso26262__support_555`
+  :need:`std_wp__iso26262__support_552`, :need:`std_wp__iso26262__support_553`, :need:`std_wp__iso26262__support_554`, :need:`std_wp__iso26262__support_555`, :need:`std_req__iso26262__management_64610`
 
-* Because in the S-CORE SW platform HW elements are out of scope: :need:`std_wp__iso26262__support_1351`, :need:`std_wp__iso26262__support_1352`, :need:`std_wp__iso26262__support_1353`
+* Because in the S-CORE SW platform HW elements are out of scope: :need:`std_wp__iso26262__support_1351`, :need:`std_wp__iso26262__support_1352`, :need:`std_wp__iso26262__support_1353`, :need:`std_req__iso26262__management_6454`
 
-* Because in the S-CORE SW platform a proven in use argument will not be applied: :need:`std_wp__iso26262__support_1451`, :need:`std_wp__iso26262__support_1452`
+* Because in the S-CORE SW platform a proven in use argument will not be applied: :need:`std_wp__iso26262__support_1451`, :need:`std_wp__iso26262__support_1452`, :need:`std_req__iso26262__management_6453`
 
 * Because in the S-CORE SW platform interfacing of out of scope of ISO 26262 applications is not planned: :need:`std_wp__iso26262__support_1551`
 
@@ -135,6 +135,10 @@ But also some activities based on requirements defining what has to be done to c
 
 * Because those are not relevant for ASIL_B: :need:`std_req__iso26262__system_6423`,
   :need:`std_req__iso26262__system_6424`, :need:`std_req__iso26262__system_6425`
+
+* Because S-CORE is not planning to do a safety assessment: :need:`std_req__iso26262__management_64121`, :need:`std_req__iso26262__management_64122`, :need:`std_req__iso26262__management_64123`,
+  :need:`std_req__iso26262__management_64124`, :need:`std_req__iso26262__management_64125`, :need:`std_req__iso26262__management_64126`, :need:`std_req__iso26262__management_64127`, :need:`std_req__iso26262__management_64128`,
+  :need:`std_req__iso26262__management_64129`, :need:`std_req__iso26262__management_641210`, :need:`std_req__iso26262__management_641211`, :need:`std_req__iso26262__management_641212`, :need:`std_req__iso26262__management_641213`
 
 Approach
 ++++++++
