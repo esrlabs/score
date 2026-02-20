@@ -38,7 +38,7 @@ This release of Eclipse S-CORE is an early beta version intended solely for expe
 Please be aware, that features may be incomplete, the software may exhibit instability or unexpected behavior, and breaking changes and alterations in scope are likely as development progresses.
 
 
-.. image:: ../_assets/architecture.drawio_0_6.svg
+.. image:: ../_assets/architecture_0_6.drawio.svg
    :width: 1000
    :alt: Architecture overview
    :align: center
