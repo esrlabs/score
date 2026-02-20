@@ -308,7 +308,6 @@ Bazel CPP Toolchain
 - **Release notes**: `Bazel CPP Toolchain release notes <https://github.com/eclipse-score/bazel_cpp_toolchains/releases/tag/v0.2.2>`_
 
 
-
 Known Issues
 ----------------------
 - see release notes of every module separately
