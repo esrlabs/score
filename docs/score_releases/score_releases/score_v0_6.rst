@@ -25,7 +25,7 @@ S-CORE v0.6-release notes
 | **Platform Name**: S-CORE
 | **Release Tag**: v0.6.0
 | **Origin Release Tag**: v0.5.0-beta
-| **Release Date**: 2026-02-22
+| **Release Date**: 2026-02-23
 
 Overview
 ^^^^^^^^^
