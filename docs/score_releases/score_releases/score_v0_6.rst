@@ -105,21 +105,6 @@ Zero-copy, shared-memory based inter-process communication for minimal-latency i
 - Extension of the Rust API (expect further extensive work on this API)
 - Support explicit setting of application id in configuration (with fallback to PID)
 
-Fixed Execution Order Framework(FEO)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-A framework for data-driven and time-driven applications (mainly in the ADAS domain)
-
-- **Version:** ``feo v1.0.5``
-- **Release notes**: `FEO  release notes 1.0.x <https://github.com/eclipse-score/feo/releases/tag/v1.0.5>`_
-
-**Improvements**
-
-- Update GCC & Rust toolchains
-- Update Error propagation and handling
-- Update handling startup timeout
-- Update handling of spurious interrupts, shutdown and termination signals
-- Updates to CI and testing
-
 
 Persistency
 ~~~~~~~~~~~
@@ -268,7 +253,7 @@ in the automotive domain, suitable for safety and security contexts.
   - ISO PAS 8926
 
 - **Version:** ``process description v1.4.3``
-- **Release notes**: `process_description release notes v1.4.x <https://github.com/eclipse-score/process_description/releases/tag/v1.4.3>`_
+- **Release notes**: `process_description release notes v1.4.x <https://github.com/eclipse-score/process_description/releases>`_
 - **Process maturity overview**:
 
 .. figure:: ../_assets/score_process_area_overview.drawio.svg
@@ -302,8 +287,8 @@ ITF (Integration Testing Framework)
 
   - Improved ITF `user documentation <https://github.com/eclipse-score/itf/blob/main/README.md>`_
 
-- **Version:** ``itf v0.1.1``
-- **Source / tag:** `ITF GitHub release <https://github.com/eclipse-score/itf/releases/tag/v0.1.1>`_
+- **Version:** ``itf v0.1.0``
+- **Source / tag:** `ITF GitHub release <https://github.com/eclipse-score/itf/releases/tag/v0.1.0>`_
 
 Test Scenarios
 ~~~~~~~~~~~~~~~
@@ -319,8 +304,8 @@ Test scenarios provide a backend for defining C++ and Rust implemented test scen
 
 Bazel CPP Toolchain
 ~~~~~~~~~~~~~~~~~~~~
-- **Version:** ``bazel_cpp_toolchains v0.3.0``
-- **Release notes**: `Bazel CPP Toolchain release notes <https://github.com/eclipse-score/bazel_cpp_toolchains/releases/tag/v0.3.0>`_
+- **Version:** ``bazel_cpp_toolchains v0.2.2``
+- **Release notes**: `Bazel CPP Toolchain release notes <https://github.com/eclipse-score/bazel_cpp_toolchains/releases/tag/v0.2.2>`_
 
 
 
