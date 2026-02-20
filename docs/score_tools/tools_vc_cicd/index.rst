@@ -28,3 +28,5 @@ Version Control & CI/CD Tools Overview
 .. toctree::
    :hidden:
    :maxdepth: 2
+
+   github
