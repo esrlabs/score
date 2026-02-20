@@ -18,11 +18,21 @@
    :safety: ASIL_B
    :security: YES
    :includes: comp__os_libc, comp__os_message_passing
+   :tags: external
 
-.. mod_view_sta:: OS
+.. mod_view_sta:: OS (external)
    :id: mod_view_sta__os__os
-   :includes: comp__os_libc, comp__os_message_passing
+   :includes: comp__os_libc, comp__os_message_passing, comp__os_libcpp
    :belongs_to: mod__os
+
+   The module "OS" is not a part of the S-CORE SW-Platform, but it is a crucial external SW element.
+   Its components are modelled in S-CORE to be able to describe dependencies of S-CORE features to this external component.
+   As it is external to S-CORE, the (folder/file) structure of the documentation may be different from the other modules.
+   Its main content is the operating system environment (sometimes also already called a "SW platform").
+   But also other SW components are modelled as a part of it as these are often provided by the "OS" supplier.
+   One example of these "other" SW components are the C/C++ libs which may come from a processor manufacturer instead.
+   S-CORE expects to support integration of more than one operating system, so these may be seen already in this module view,
+   as different components. Requirements on this OS integration are documented in :need:`doc__os_requirements`.
 
    .. needarch::
       :scale: 50
@@ -36,3 +46,6 @@ Module Documents
 .. toctree::
    :maxdepth: 2
    :titlesonly:
+
+   requirements/index.rst
+   requirements/aou_req.rst

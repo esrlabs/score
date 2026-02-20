@@ -12,21 +12,16 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. _tools_vc_cicd:
+.. _comp_doc_libcpp:
 
-Version Control & CI/CD Tools Overview
-======================================
+libcpp
+######
 
-.. needtable:: Compiler Tools List
-   :tags: tool_management, tools_vc_cicd
-   :filter: "tool_management" in tags and "tools_vc_cicd" in tags and type == "doc_tool" and is_external == False
-   :style: table
-   :sort: status
-   :columns: id as "UID";title as "TITLE";version as "VERSION";status as "STATUS";tcl as "TCL";safety_affected as "SAFETY AFFECTED";security_affected as "SECURITY AFFECTED"
-   :colwidths: 30,30,30,30,30,30,30
+Component Documents
+===================
 
 .. toctree::
-   :hidden:
    :maxdepth: 2
+   :titlesonly:
 
-   github
+   architecture/index

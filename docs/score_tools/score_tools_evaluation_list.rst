@@ -607,10 +607,10 @@ release, as part of the Tool Verification Report.
    * - 6-2
      - GitHub
      - Code hosting and collaboration platform
-     - T.B.D. (see [1]_)
+     - cloud
      - YES
      - :need:`rl__infrastructure_tooling_community`
-     - N/A
+     - :need:`doc_tool__github`
      - YES
    * - 6-3
      - GitHub Actions
