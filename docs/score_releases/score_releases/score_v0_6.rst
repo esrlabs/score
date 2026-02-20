@@ -319,10 +319,6 @@ Test scenarios provide a backend for defining C++ and Rust implemented test scen
 
 Bazel CPP Toolchain
 ~~~~~~~~~~~~~~~~~~~~
-- **What is in**
-
-  - tbd
-
 - **Version:** ``bazel_cpp_toolchains v0.3.0``
 - **Release notes**: `Bazel CPP Toolchain release notes <https://github.com/eclipse-score/bazel_cpp_toolchains/releases/tag/v0.3.0>`_
 
