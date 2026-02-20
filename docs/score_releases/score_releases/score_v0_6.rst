@@ -62,8 +62,8 @@ Improvements
 S-CORE Platform
 ^^^^^^^^^^^^^^^^^^
 
-- **Version:** ``score v0.5.5``
-- **Release notes**: `S-CORE Platform release notes <https://github.com/eclipse-score/score/releases/tag/v0.5.5>`_
+- **Version:** ``score v0.5.4``
+- **Release notes**: `S-CORE Platform release notes <https://github.com/eclipse-score/score/releases/tag/v0.5.4>`_
 
 
 
